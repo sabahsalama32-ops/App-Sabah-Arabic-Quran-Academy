@@ -1,0 +1,6 @@
+{
+  "app": "teacher-app-clean-base",
+  "deploymentMarker": "clean-template-v1",
+  "createdAt": "2026-09-09T19:09:00+03:00",
+  "purpose": "Reusable clean base for building a new educational app."
+}

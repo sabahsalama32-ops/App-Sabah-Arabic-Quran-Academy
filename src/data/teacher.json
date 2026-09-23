@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "appName": "تطبيقي التعليمي",
+  "name": "اسم المعلم",
+  "professionalTitle": "المسمى المهني",
+  "bio": "نبذة قصيرة عن المعلم.",
+  "tagline": "تعلم بطريقة أبسط وأوضح",
+  "language": "ar",
+  "direction": "rtl",
+  "photo": null,
+  "logo": null,
+  "theme": {
+    "primary": "#1D4ED8",
+    "primaryContrast": "#FFFFFF",
+    "accent": "#0F766E",
+    "background": "#F8FAFC",
+    "surface": "#FFFFFF",
+    "text": "#0F172A",
+    "mutedText": "#475569",
+    "border": "#CBD5E1",
+    "focus": "#7C3AED",
+    "secondary": "#334155",
+    "creativeAccent": "#7C3AED",
+    "warmSurface": "#F1F5F9",
+    "fontFamily": "'IBM Plex Sans Arabic', 'Segoe UI', Tahoma, Arial, sans-serif"
+  },
+  "contacts": [],
+  "designPreferences": {
+    "style": "تعليمي، بسيط، واضح، منظم، بخلفيات فاتحة",
+    "avoid": [
+      "الزحام البصري",
+      "كثرة الألوان في الشاشة الواحدة",
+      "الزخارف غير الوظيفية"
+    ]
+  }
+}

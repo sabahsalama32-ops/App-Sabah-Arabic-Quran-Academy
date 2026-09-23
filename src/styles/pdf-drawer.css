@@ -1,0 +1,150 @@
+.booklet-list {
+  position: relative;
+}
+
+.booklet-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.booklet-open-button {
+  gap: 0.45rem;
+}
+
+.booklet-open-button svg,
+.booklet-download-link svg {
+  width: 18px;
+}
+
+.pdf-drawer-layer {
+  position: fixed;
+  z-index: 200;
+  inset: 0;
+}
+
+.pdf-drawer-backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: rgba(17, 24, 39, 0.58);
+  cursor: pointer;
+}
+
+.pdf-drawer {
+  position: absolute;
+  z-index: 1;
+  inset-block: 0;
+  inset-inline-start: 0;
+  display: grid;
+  width: min(100%, 760px);
+  grid-template-rows: auto auto minmax(0, 1fr);
+  overflow: hidden;
+  border-inline-end: 1px solid var(--border);
+  background: var(--color-surface);
+  box-shadow: 18px 0 55px rgba(17, 24, 39, 0.24);
+  animation: booklet-drawer-in 180ms ease-out;
+}
+
+.pdf-drawer__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border-block-end: 1px solid var(--border);
+  background: color-mix(in srgb, var(--color-warm-surface) 34%, var(--color-surface));
+}
+
+.pdf-drawer__header h2 {
+  margin: 0.2rem 0 0;
+  color: var(--color-secondary);
+  font-size: clamp(1.05rem, 3vw, 1.35rem);
+}
+
+.pdf-drawer__close {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  background: var(--color-surface);
+  color: var(--color-secondary);
+  cursor: pointer;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.pdf-drawer__close:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.pdf-drawer__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.8rem 1rem;
+  border-block-end: 1px solid var(--border);
+  background: var(--color-surface);
+}
+
+.pdf-drawer__actions .primary-button {
+  min-height: 46px;
+  padding-block: 0.55rem;
+}
+
+.pdf-drawer__frame {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  border: 0;
+  background: var(--color-background);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@keyframes booklet-drawer-in {
+  from { transform: translateX(24px); opacity: 0.7; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@media (max-width: 539px) {
+  .pdf-drawer {
+    width: 100%;
+  }
+
+  .pdf-drawer__actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .pdf-drawer__actions .primary-button,
+  .pdf-drawer__actions .text-link {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pdf-drawer {
+    animation: none;
+  }
+}

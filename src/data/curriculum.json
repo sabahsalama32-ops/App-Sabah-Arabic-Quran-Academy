@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "levels": [
+    {
+      "id": "level-01",
+      "title": "المرحلة / الصف",
+      "stage": "المرحلة التعليمية",
+      "subjects": [
+        {
+          "id": "subject-01",
+          "title": "اسم المادة",
+          "units": [
+            {
+              "id": "unit-01",
+              "title": "الوحدة الأولى",
+              "description": "وصف مختصر للوحدة.",
+              "lessons": [
+                { "id": "lesson-01", "title": "الدرس الأول" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
