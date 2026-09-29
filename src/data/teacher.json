@@ -1,36 +1,16 @@
 {
-  "schemaVersion": 1,
-  "appName": "تطبيقي التعليمي",
-  "name": "اسم المعلم",
-  "professionalTitle": "المسمى المهني",
-  "bio": "نبذة قصيرة عن المعلم.",
-  "tagline": "تعلم بطريقة أبسط وأوضح",
-  "language": "ar",
-  "direction": "rtl",
-  "photo": null,
-  "logo": null,
-  "theme": {
-    "primary": "#1D4ED8",
-    "primaryContrast": "#FFFFFF",
-    "accent": "#0F766E",
-    "background": "#F8FAFC",
-    "surface": "#FFFFFF",
-    "text": "#0F172A",
-    "mutedText": "#475569",
-    "border": "#CBD5E1",
-    "focus": "#7C3AED",
-    "secondary": "#334155",
-    "creativeAccent": "#7C3AED",
-    "warmSurface": "#F1F5F9",
-    "fontFamily": "'IBM Plex Sans Arabic', 'Segoe UI', Tahoma, Arial, sans-serif"
-  },
-  "contacts": [],
-  "designPreferences": {
-    "style": "تعليمي، بسيط، واضح، منظم، بخلفيات فاتحة",
-    "avoid": [
-      "الزحام البصري",
-      "كثرة الألوان في الشاشة الواحدة",
-      "الزخارف غير الوظيفية"
-    ]
-  }
+  "schemaVersion":1,
+  "appName":"Sabah Arabic Quran Academy",
+  "name":"المعلمة صباح",
+  "professionalTitle":"معلمة قرآن ولغة عربية للأعاجم",
+  "bio":"أكاديمية تعليمية عبر الإنترنت لتعليم القرآن الكريم وأحكام التجويد والقرائية واللغة العربية والدراسات الإسلامية لغير الناطقين بالعربية.",
+  "tagline":"Learn Arabic and the Quran with Teacher Sabah",
+  "language":"ar","direction":"rtl",
+  "photo":{"src":"/assets/brand/teacher-placeholder.svg","alt":"المعلمة صباح"},
+  "logo":{"src":"/assets/brand/logo-placeholder.svg","alt":"Sabah Arabic Quran Academy"},
+  "theme":{"primary":"#0F766E","primaryContrast":"#FFFFFF","accent":"#C79A3B","background":"#F7F5EF","surface":"#FFFFFF","text":"#17352F","mutedText":"#5C6B67","border":"#D9D4C8","focus":"#7C5C17","secondary":"#174E46","creativeAccent":"#8B5E34","warmSurface":"#F3E9D2","fontFamily":"'IBM Plex Sans Arabic','Segoe UI',Tahoma,Arial,sans-serif"},
+  "contacts":[],
+  "designPreferences":{"style":"تعليمي، إسلامي أنيق، دافئ، واضح، منظم، مناسب للمتعلمين غير الناطقين بالعربية","avoid":["الزحام البصري","كثرة الألوان في الشاشة الواحدة","الزخارف غير الوظيفية"]},
+  "brandName":"Sabah Arabic Quran Academy",
+  "specialization":"Quran with Tajweed · Noor Al Bayaan & Qaida Al-Noorania · Islamic Studies · Arabic Language"
 }

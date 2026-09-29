@@ -26,9 +26,12 @@ describe('تكامل محتوى المشروع', () => {
     }
   });
 
-  it('يعمل التنقل داخل الوحدة عند وجود درس واحد', () => {
+  it('يعمل التنقل بين الدروس داخل الوحدة', () => {
     const first = findLessonContext('lesson-01');
     expect(first).not.toBeNull();
-    expect(first && getLessonNeighbors(first)).toMatchObject({ previous: null, next: null });
+    expect(first && getLessonNeighbors(first)).toMatchObject({
+      previous: null,
+      next: { id: 'lesson-02', title: 'الدرس 2' },
+    });
   });
 });
