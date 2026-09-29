@@ -7,35 +7,18 @@ import { HomePage } from './pages/HomePage';
 import { LearningProfilePage } from './pages/LearningProfilePage';
 import { LessonPage } from './pages/LessonPage';
 import { NotFoundPage } from './pages/NotFoundPage';
+import { StudentProgramsPage } from './pages/StudentProgramsPage';
 import { UnitPage } from './pages/UnitPage';
-
-const BoardPage = lazy(() =>
-  import('./pages/BoardPage').then((module) => ({ default: module.BoardPage })),
-);
-
+const BoardPage = lazy(() => import('./pages/BoardPage').then((module) => ({ default: module.BoardPage })));
 export default function App() {
-  return (
-    <ErrorBoundary>
-      <HashRouter>
-        <AppShell>
-          <Routes>
-            <Route element={<HomePage />} path="/" />
-            <Route element={<LearningProfilePage />} path="/learning-profile" />
-            <Route element={<CurriculumPage />} path="/curriculum" />
-            <Route element={<UnitPage />} path="/curriculum/:levelId/:subjectId/:unitId" />
-            <Route element={<LessonPage />} path="/lessons/:lessonId" />
-            <Route
-              element={(
-                <Suspense fallback={<div className="board-loading" role="status">جارٍ تجهيز السبورة التعليمية…</div>}>
-                  <BoardPage />
-                </Suspense>
-              )}
-              path="/board"
-            />
-            <Route element={<NotFoundPage />} path="*" />
-          </Routes>
-        </AppShell>
-      </HashRouter>
-    </ErrorBoundary>
-  );
+  return <ErrorBoundary><HashRouter><AppShell><Routes>
+    <Route element={<HomePage />} path="/" />
+    <Route element={<LearningProfilePage />} path="/learning-profile" />
+    <Route element={<CurriculumPage />} path="/curriculum" />
+    <Route element={<StudentProgramsPage />} path="/student-programs" />
+    <Route element={<UnitPage />} path="/curriculum/:levelId/:subjectId/:unitId" />
+    <Route element={<LessonPage />} path="/lessons/:lessonId" />
+    <Route element={<Suspense fallback={<div className="board-loading" role="status">جارٍ تجهيز السبورة التعليمية…</div>}><BoardPage /></Suspense>} path="/board" />
+    <Route element={<NotFoundPage />} path="*" />
+  </Routes></AppShell></HashRouter></ErrorBoundary>;
 }
