@@ -1,26 +1,9 @@
 {
-  "schemaVersion": 1,
-  "levels": [
-    {
-      "id": "level-01",
-      "title": "المرحلة / الصف",
-      "stage": "المرحلة التعليمية",
-      "subjects": [
-        {
-          "id": "subject-01",
-          "title": "اسم المادة",
-          "units": [
-            {
-              "id": "unit-01",
-              "title": "الوحدة الأولى",
-              "description": "وصف مختصر للوحدة.",
-              "lessons": [
-                { "id": "lesson-01", "title": "الدرس الأول" }
-              ]
-            }
-          ]
-        }
-      ]
-    }
+  "schemaVersion":1,
+  "levels":[
+    {"id":"level-01","title":"القرآن الكريم وأحكام التجويد","stage":"لجميع الأعمار","subjects":[{"id":"subject-01","title":"Quran with Tajweed","units":[{"id":"unit-01","title":"الوحدة 1","description":"مسار تعليمي ضمن القرآن الكريم وأحكام التجويد.","lessons":[{"id":"lesson-01","title":"الدرس 1"},{"id":"lesson-02","title":"الدرس 2"},{"id":"lesson-03","title":"الدرس 3"}]},{"id":"unit-02","title":"الوحدة 2","description":"مسار تعليمي ضمن القرآن الكريم وأحكام التجويد.","lessons":[{"id":"lesson-04","title":"الدرس 1"},{"id":"lesson-05","title":"الدرس 2"},{"id":"lesson-06","title":"الدرس 3"}]}]}]},
+    {"id":"level-02","title":"القرائية ونور البيان والقاعدة النورانية","stage":"لجميع الأعمار","subjects":[{"id":"subject-02","title":"Noor Al Bayaan & Qaida Al-Noorania","units":[{"id":"unit-03","title":"الوحدة 1","description":"مسار تعليمي ضمن القرائية ونور البيان والقاعدة النورانية.","lessons":[{"id":"lesson-07","title":"الدرس 1"},{"id":"lesson-08","title":"الدرس 2"},{"id":"lesson-09","title":"الدرس 3"}]},{"id":"unit-04","title":"الوحدة 2","description":"مسار تعليمي ضمن القرائية ونور البيان والقاعدة النورانية.","lessons":[{"id":"lesson-10","title":"الدرس 1"},{"id":"lesson-11","title":"الدرس 2"},{"id":"lesson-12","title":"الدرس 3"}]}]}]},
+    {"id":"level-03","title":"الدراسات الإسلامية","stage":"لجميع الأعمار","subjects":[{"id":"subject-03","title":"Islamic Studies","units":[{"id":"unit-05","title":"الوحدة 1","description":"مسار تعليمي ضمن الدراسات الإسلامية.","lessons":[{"id":"lesson-13","title":"الدرس 1"},{"id":"lesson-14","title":"الدرس 2"},{"id":"lesson-15","title":"الدرس 3"}]},{"id":"unit-06","title":"الوحدة 2","description":"مسار تعليمي ضمن الدراسات الإسلامية.","lessons":[{"id":"lesson-16","title":"الدرس 1"},{"id":"lesson-17","title":"الدرس 2"},{"id":"lesson-18","title":"الدرس 3"}]}]}]},
+    {"id":"level-04","title":"اللغة العربية","stage":"لجميع الأعمار","subjects":[{"id":"subject-04","title":"Arabic Language","units":[{"id":"unit-07","title":"الوحدة 1","description":"مسار تعليمي ضمن اللغة العربية لغير الناطقين بها.","lessons":[{"id":"lesson-19","title":"الدرس 1"},{"id":"lesson-20","title":"الدرس 2"},{"id":"lesson-21","title":"الدرس 3"}]},{"id":"unit-08","title":"الوحدة 2","description":"مسار تعليمي ضمن اللغة العربية لغير الناطقين بها.","lessons":[{"id":"lesson-22","title":"الدرس 1"},{"id":"lesson-23","title":"الدرس 2"},{"id":"lesson-24","title":"الدرس 3"}]}]}]}
   ]
 }
